@@ -1,6 +1,7 @@
 import React from "react";
 import "semantic-ui-css/semantic.min.css";
 import Display from "./components/Display/Display";
+import MapMain from './components/Map/WrappedMap';
 import { db } from "./services/firebase";
 import ReactDOM from "react-dom";
 import {
@@ -41,18 +42,13 @@ class App extends React.Component {
         <Router>
           <Route exact path="/" component={Home}></Route>
           <Route exact path="/search" component={Search}></Route>
+          <Route exact path="/map" component={MapMain} />
           <Route
             exact
             path="/search/:business"
             component={BusinessPage}
           ></Route>
         </Router>
-        {/* <div className="App">
-          <h1>Frontline Deals</h1>
-          {this.state.businesses && (
-            <Display businesses={this.state.businesses} />
-          )}
-        </div> */}
       </React.Fragment>
     );
   }

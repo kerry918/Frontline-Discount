@@ -5,17 +5,8 @@ import { Dropdown, Grid } from 'semantic-ui-react'
 class Home extends Component {
     constructor(props) {
         super(props);
-        this.state = {
-            provOptions: [],
-            catOptions: [],
-            businesses: [],
-        }
-    }
-    componentDidMount = async () => {
-        this.getStores("ON", null, true, false);
     }
 
-   
     render() { 
         console.log(this.state);
         return ( 

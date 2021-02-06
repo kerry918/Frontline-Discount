@@ -1,6 +1,8 @@
 import React from 'react'; 
 import Display from './components/Display/Display';
+import MapMain from './components/Map/WrappedMap';
 import { db } from './services/firebase'; 
+import { Route, Switch } from "react-router-dom";
 
 class App extends React.Component {
   state = {
@@ -26,6 +28,9 @@ class App extends React.Component {
     return (
       <div className="App">
         <h1>Frontline Deals</h1> 
+        <Switch>
+          <Route exact path="/map" component={MapMain} />
+        </Switch>
         {
           this.state.businesses && 
           <Display businesses={this.state.businesses}/>

@@ -1,4 +1,5 @@
 import React from 'react'; 
+import Display from './components/Display/Display';
 import { db } from './services/firebase'; 
 
 class App extends React.Component {
@@ -27,13 +28,7 @@ class App extends React.Component {
         <h1>Frontline Deals</h1> 
         {
           this.state.businesses && 
-          this.state.businesses.map( business => {
-            return(
-              <div key={business.ID}>
-                <p>{business.Name} | {business.Category}</p>
-              </div>
-            )
-          })
+          <Display businesses={this.state.businesses}/>
         }
       </div>
     )

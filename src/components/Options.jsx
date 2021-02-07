@@ -7,6 +7,13 @@ export const provOptions = [
     { key: "PE", text: "Prince Edward Island", value: "PE" },
     { key: "NS", text: "Nova Scotia", value: "NS" },
     { key: "NB", text: "New Brunswick", value: "NB" },
+    { key: "BC", text: "British Columbia", value: "BC" },
+    { key: "MB", text: "Manitoba", value: "MB" },
+    { key: "AB", text: "Alberta", value: "AB" },
+    { key: "QC", text: "Quebec", value: "QC" },
+    { key: "NWT", text: "Northwest Territories", value: "NWT" },
+    { key: "NT", text: "Nunavut", value: "NT" },
+    { key: "NB", text: "New Brunswick", value: "NB" },
 ]
 
 export const categoryOptions = [

@@ -83,7 +83,7 @@ class Search extends Component {
               return storesByName;
             } catch (error) {
               console.error(error);
-            }
+            } 
             return;
         }
         else {

@@ -1,0 +1,22 @@
+.business-page-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 10%;
+}
+.business-title {
+  font-size: 3em;
+}
+.business-body {
+  font-size: 1.5em;
+  padding-top: 1em;
+}
+.business-category {
+  font-size: 1.3em;
+  padding-top: 1em;
+  padding-bottom: 1.5em;
+}

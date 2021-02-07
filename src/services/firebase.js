@@ -19,6 +19,15 @@ firebase.initializeApp(firebaseConfig);
 // Initialize Database
 export const db = firebase.firestore();
 
+export const getStoreByName = async (store) => {
+  try {
+    const x = (await db.collection("Business").doc(store).get()).data();
+    return x;
+  } catch (error) {
+    console.log(error);
+  }
+  return;
+};
 export const getStores = async (prov, category, byProv, byCategory) => {
   // filter by province
   if (byProv === true && byCategory === false) {

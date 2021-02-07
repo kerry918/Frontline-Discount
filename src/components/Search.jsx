@@ -152,6 +152,7 @@ class Search extends Component {
                   Show me deals in
                   <span>&nbsp;&nbsp;</span>
                   <Dropdown
+                    className="highlight-y"
                       inline
                       options={provOptions}
                       defaultValue={provOptions[0].value}
@@ -161,6 +162,7 @@ class Search extends Component {
                   for{' '}
                   <span>&nbsp;&nbsp;</span>
                   <Dropdown
+                      className="highlight-y"
                       inline
                       options={categoryOptions}
                       defaultValue={categoryOptions[0].value}

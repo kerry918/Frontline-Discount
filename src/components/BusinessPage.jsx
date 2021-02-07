@@ -35,7 +35,7 @@ class BusinessPage extends Component {
                 </Container>
                 
                 <Container className="business-page-container">
-                    <div className="business-title">
+                    <div className="business-title highlight-y">
                         {this.state.business.Name}
                     </div>
                     <div className="business-category">

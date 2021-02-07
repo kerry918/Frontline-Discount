@@ -3,6 +3,7 @@ import { db } from "../services/firebase";
 import { Container, Divider, Dropdown, Button, Icon } from 'semantic-ui-react';
 import {provOptions, categoryOptions} from "./Options";
 import CardsContainer from "./Cards/CardsContainer";
+import "./styles.css"
 
 class Search extends Component {
     constructor(props) {
@@ -147,33 +148,39 @@ class Search extends Component {
         return ( 
             <React.Fragment>
                 <Container textAlign='center' style={{paddingTop: "5%"}}>
-                    <span>
-                        Show me deals in{' '}
+                    <span className="search-bar">
+                        Show me deals in
+                        <span>&nbsp;&nbsp;</span>
                         <Dropdown
                             inline
                             options={provOptions}
                             defaultValue={provOptions[0].value}
                             onChange={this.onProvChange}
                         />
+                        <span>&nbsp;&nbsp;</span>
                         for{' '}
+                        <span>&nbsp;&nbsp;</span>
                         <Dropdown
                             inline
                             options={categoryOptions}
                             defaultValue={categoryOptions[0].value}
                             onChange={this.onCategoryChange}
                         />
-                        {' '}
+                        <span>&nbsp;&nbsp;</span>
                         <Button 
                             style={{background:"white"}} 
+                            size='huge'
                             icon
                             onClick={this.onSearch}
                         >
                             <Icon name='arrow right' />
                         </Button>
                     </span>
-                    <CardsContainer 
-                        businesses={this.state.businesses}
-                    />
+                    <div className="padding-bottom">
+                      <CardsContainer 
+                          businesses={this.state.businesses}
+                      />
+                    </div>
                 </Container>
             </React.Fragment>
          );

@@ -94,10 +94,9 @@ export class Map extends React.Component {
                                 }}
                             >
                                 <div>
-                                    Park details
-                                    <h2>Starbucks</h2>
-                                    <p>Description</p>
-                                    <p>Open</p>
+                                    <h2 className="highlight-b">Starbucks</h2>
+                                    <p>Starbucks Corporation is an American multinational chain of coffeehouses and roastery reserves headquartered in Seattle, Washington. As the world's largest coffeehouse chain, Starbucks is seen to be the main representation of the United States' second wave of coffee culture.</p>
+                                    <p>Open: 6:30AM - 8:00PM</p>
                                 </div>
                             </InfoWindow>
                         )}

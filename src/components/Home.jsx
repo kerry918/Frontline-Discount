@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { db } from "../services/firebase";
-import { Dropdown, Grid } from 'semantic-ui-react'
+import LandingPage from './LandingPage/LandingPage'
+
 
 class Home extends Component {
     constructor(props) {
@@ -11,7 +11,7 @@ class Home extends Component {
         console.log(this.state);
         return ( 
             <React.Fragment>
-                <div>frontline deals </div>
+                <LandingPage/>
             </React.Fragment>
          );
     }

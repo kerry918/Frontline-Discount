@@ -1,5 +1,3 @@
-import React from 'react';
-
 export const provOptions = [
     { key: "All", text: "Canada", value: "All"},
     { key: "ON", text: "Ontario", value: "ON" },

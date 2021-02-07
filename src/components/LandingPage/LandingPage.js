@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Header } from "semantic-ui-react";
+import { Container, Header, Button } from "semantic-ui-react";
 import "./Landing.css";
 import pic from "../../image/IconFour.png";
 import picTwo from "../../image/IconThree.jpg";
@@ -20,9 +20,9 @@ export default function LandingPage() {
         <div class="img">
           <img src={pic} />
         </div>
-        <button class="massive ui button-landing">
+        <Button className="massive ui button-landing">
           <a href="/search">Search</a>
-        </button>
+        </Button>
       </Container>
     </React.Fragment>
   );

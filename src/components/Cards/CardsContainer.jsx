@@ -9,7 +9,7 @@ class CardsContainer extends Component {
             <React.Fragment>
                 {this.props.businesses.map((business) => {
                     return (
-                        <div className="container" key={business.Name} >
+                        <div className="container-cards" key={business.Name} >
                             <CardItem
                                 key={business.Name}
                                 name={business.Name}

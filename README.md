@@ -2,6 +2,13 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Inspiration
+During this horrible pandemic, our team wanted to utilize our knowledge and return something positive back to the community especially to the frontline workers. While scrolling through our social media we have noticed that there were a lot of benefits opened for the frontline workers (https://mybetterliving.ca/wp-content/uploads/2020/04/Offers-Available-.pdf). Therefore, we wanted to develop an application that will allow the busy healthcare workers to easily access information for those benefits through one source. 
+## What it does
+Obtained every piece of information from the attached pdf and sortes them according to the location (Province,  Territories) and categories (Food & Beverages, Accommodations, Miscellaneous). Pinpoints the nearest benefit offering store according to the user's instant location.
+## How we built it
+Imported data into Google Firebase for easy data access, enabled Google Map API to display the map with the marker and information, detects the nearest location of the store according to the user's area. The frontend user interface is built with JavaScript and React along with Semantic UI.
+
 ## Available Scripts
 
 In the project directory, you can run:

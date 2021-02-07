@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {getStoreByName } from "../services/firebase";
 import { Container } from 'semantic-ui-react'
 import "./styles.css";
+import MapMain from './Map/WrappedMap';
 
 class BusinessPage extends Component {
     constructor(props) {
@@ -25,6 +26,14 @@ class BusinessPage extends Component {
         console.log(this.state)
         return ( 
             <React.Fragment>
+                <Container>
+                <div>
+                    <h1><a href="/search">
+                    Back to Search{" "}<i class="syringe icon"></i>
+                    </a></h1>
+                </div>
+                </Container>
+                
                 <Container className="business-page-container">
                     <div className="business-title">
                         {this.state.business.Name}
@@ -51,10 +60,13 @@ class BusinessPage extends Component {
                             href={this.state.business.Source}
                             target="_blank"
                         >
-                            Source
+                            Click for More Info
                         </a>
                     </div>
                 </Container>
+                <br/>
+                <MapMain/>
+                <br/>
             </React.Fragment>
          );
     }

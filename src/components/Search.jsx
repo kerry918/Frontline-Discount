@@ -146,43 +146,43 @@ class Search extends Component {
     render() { 
         console.log(this.state);
         return ( 
-            <React.Fragment>
-                <Container textAlign='center' style={{paddingTop: "5%"}}>
-                    <span className="search-bar">
-                        Show me deals in
-                        <span>&nbsp;&nbsp;</span>
-                        <Dropdown
-                            inline
-                            options={provOptions}
-                            defaultValue={provOptions[0].value}
-                            onChange={this.onProvChange}
-                        />
-                        <span>&nbsp;&nbsp;</span>
-                        for{' '}
-                        <span>&nbsp;&nbsp;</span>
-                        <Dropdown
-                            inline
-                            options={categoryOptions}
-                            defaultValue={categoryOptions[0].value}
-                            onChange={this.onCategoryChange}
-                        />
-                        <span>&nbsp;&nbsp;</span>
-                        <Button 
-                            style={{background:"white"}} 
-                            size='huge'
-                            icon
-                            onClick={this.onSearch}
-                        >
-                            <Icon name='arrow right' />
-                        </Button>
-                    </span>
-                    <div className="padding-bottom">
-                      <CardsContainer 
-                          businesses={this.state.businesses}
-                      />
-                    </div>
-                </Container>
-            </React.Fragment>
+          <React.Fragment>
+          <Container textAlign='center' style={{paddingTop: "5%"}}>
+              <span className="search-bar">
+                  Show me deals in
+                  <span>&nbsp;&nbsp;</span>
+                  <Dropdown
+                      inline
+                      options={provOptions}
+                      defaultValue={provOptions[0].value}
+                      onChange={this.onProvChange}
+                  />
+                  <span>&nbsp;&nbsp;</span>
+                  for{' '}
+                  <span>&nbsp;&nbsp;</span>
+                  <Dropdown
+                      inline
+                      options={categoryOptions}
+                      defaultValue={categoryOptions[0].value}
+                      onChange={this.onCategoryChange}
+                  />
+                  <span>&nbsp;&nbsp;</span>
+                  <Button 
+                      style={{background:"white"}} 
+                      size='huge'
+                      icon
+                      onClick={this.onSearch}
+                  >
+                      <Icon name='arrow right' />
+                  </Button>
+              </span>
+              <div className="padding-bottom">
+                <CardsContainer 
+                    businesses={this.state.businesses}
+                />
+              </div>
+          </Container>
+      </React.Fragment>
          );
     }
 }

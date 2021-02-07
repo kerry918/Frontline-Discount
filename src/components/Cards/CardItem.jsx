@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Card } from 'semantic-ui-react';
 import { withRouter } from 'react-router';
-
+import "./Cards.css";
 class CardItem extends Component {
     state = {  }
     onClick = () => {
@@ -16,6 +16,7 @@ class CardItem extends Component {
                     meta={this.props.category}
                     description={this.props.promo}
                     onClick={this.onClick}
+                    fluid
                 />
             </React.Fragment>
          );

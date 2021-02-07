@@ -12,11 +12,17 @@
   font-size: 3em;
 }
 .business-body {
-  font-size: 1.5em;
+  font-size: 1.3em;
   padding-top: 1em;
 }
 .business-category {
   font-size: 1.3em;
   padding-top: 1em;
   padding-bottom: 1.5em;
+}
+.search-bar {
+  font-size: 1.5em;
+}
+.padding-bottom {
+  padding-bottom: 10%;
 }

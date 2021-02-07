@@ -13,7 +13,6 @@ export const provOptions = [
     { key: "QC", text: "Quebec", value: "QC" },
     { key: "NWT", text: "Northwest Territories", value: "NWT" },
     { key: "NT", text: "Nunavut", value: "NT" },
-    { key: "NB", text: "New Brunswick", value: "NB" },
 ]
 
 export const categoryOptions = [

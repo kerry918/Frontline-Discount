@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { db } from "../services/firebase";
-import { Container, Divider, Dropdown, Button, Icon } from 'semantic-ui-react';
+import { Container, Dropdown, Button, Icon } from 'semantic-ui-react';
 import {provOptions, categoryOptions} from "./Options";
 import CardsContainer from "./Cards/CardsContainer";
 import "./styles.css"

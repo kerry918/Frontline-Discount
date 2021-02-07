@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import {getStoreByName , db} from "../services/firebase";
-import { Container, Header } from 'semantic-ui-react'
+import {getStoreByName } from "../services/firebase";
+import { Container } from 'semantic-ui-react'
 import "./styles.css";
 
 class BusinessPage extends Component {

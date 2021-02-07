@@ -1,0 +1,38 @@
+
+.title{
+    position:absolute;
+    top: 30%;
+    left:50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-size: 5em;
+    background-color: #f5e7a9
+}
+
+.button{
+    position:absolute;
+    top: 70%;
+    left:50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    color:black;
+}
+
+.desc{
+    position:absolute;
+    top: 40%;
+    width:40%;
+    font-size: 1.5em;
+    text-align: center;
+    left:30%;
+
+}
+.highlight{
+    background-color: #B5D3E7;
+}
+
+.img{
+   position:absolute;
+   top:60%; 
+}
+

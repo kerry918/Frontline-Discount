@@ -4,6 +4,7 @@ import { Container, Dropdown, Button, Icon } from 'semantic-ui-react';
 import {provOptions, categoryOptions} from "./Options";
 import CardsContainer from "./Cards/CardsContainer";
 import "./styles.css"
+import Header from "./Header";
 
 class Search extends Component {
     constructor(props) {
@@ -147,6 +148,7 @@ class Search extends Component {
         console.log(this.state);
         return ( 
           <React.Fragment>
+            <Header />
           <Container textAlign='center' style={{paddingTop: "5%"}}>
               <span className="search-bar">
                   Show me deals in

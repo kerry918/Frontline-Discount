@@ -3,6 +3,7 @@ import {getStoreByName } from "../services/firebase";
 import { Container } from 'semantic-ui-react'
 import "./styles.css";
 import MapMain from './Map/WrappedMap';
+import Header from './Header';
 
 class BusinessPage extends Component {
     constructor(props) {
@@ -26,11 +27,12 @@ class BusinessPage extends Component {
         console.log(this.state)
         return ( 
             <React.Fragment>
+                <Header />
                 <Container>
-                <div>
-                    <h1><a href="/search">
+                <div className="back">
+                    <a href="/search">
                     Back to Search{" "}<i class="syringe icon"></i>
-                    </a></h1>
+                    </a>
                 </div>
                 </Container>
                 

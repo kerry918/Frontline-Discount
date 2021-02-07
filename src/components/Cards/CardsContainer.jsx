@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import Card from "./Card";
+import CardItem from "./CardItem";
+import "./Cards.css"
 
 class CardsContainer extends Component {
     state = {  }
@@ -8,8 +9,8 @@ class CardsContainer extends Component {
             <React.Fragment>
                 {this.props.businesses.map((business) => {
                     return (
-                        <div key={business.Name}>
-                            <Card
+                        <div className="container" key={business.Name} >
+                            <CardItem
                                 key={business.Name}
                                 name={business.Name}
                                 category={business.Category}
